@@ -1,0 +1,12 @@
+div
+  md-card
+    md-card-footer
+      md-card-footer-text
+        div(layout='row')
+          div(flex='25')
+            span.md-caption Built by: {{info.first_name}} {{info.middle_name.charAt(0)}}. {{info.last_name}}
+          div(flex='50')
+          div(flex='25')
+            span.md-caption Powered by 
+              img(src='.//favicon.ico', width='15px', height='15px')
+              |  Node.js

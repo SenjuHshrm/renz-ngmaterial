@@ -1,0 +1,71 @@
+div
+  md-content(ng-controller='githubCtrl')
+    md-card(md-card-scroll-shrink)
+      md-card-header
+        md-tooltip View Github Profile and project details using the Github API.
+        h1.md-headline(flex, md-truncate) View Github Profile and Project Details
+        md-button(ng-click='getGitInfo()') View
+    md-card(ng-show='loadedGithub')
+      md-card-header
+        md-card-avatar
+          img.md-user-avatar(src='{{gitHubUser.avatar_url}}')
+        md-card-header-text
+          span.md-title.github {{gitHubUser.name}}
+          span.md-subhead
+            a(href='{{links[2].url}}', target='_blank') (@{{gitHubUser.login}})
+      md-card-content
+        md-list
+          md-list-item.md-2-line
+            div.md-list-item-text
+              p Bio: {{gitHubUser.bio}}
+              p Location: {{gitHubUser.location}}
+              p Followers: {{gitHubUser.followers}}
+              p Following: {{gitHubUser.following}}
+      md-card-header
+        md-card-header-text
+          span.md-title.github Repositories
+          span.md-subhead Total: {{gitHubUser.public_repos}}
+      div(ng-repeat='repo in repos')
+        md-card-header.repo-list
+          md-card-header-text
+            span.md-title.github {{repo.name}}
+            span.md-subhead
+              a(href='{{repo.html_url}}', target='_blank') {{repo.full_name}}
+      md-card-header
+        md-card-header-text
+          span.md-title.github About Portfolio Page
+      md-card-content
+        md-card
+          md-card-header
+            md-card-header-text
+              md-button(ng-href='{{readmeInfo.html_url}}', target='_blank')
+                span.md-headline {{readme.Info.name}}
+                i.material-icons open_in_browser
+          md-card-content
+            pre(ng-bind-html='readme', style='height:20pc;')
+      md-card-title
+        md-card-title-text(layout='column', layout-align='center center')
+          span.md-title Showing last {{limit}} commits...
+          md-slider-container(flex)
+            md-slider.md-primary(ng-model='limit', md-discrete-step='1', max='{{maxLimit}}', aria-label='limit')
+              md-input-container
+                input(flex, type='number', ng-model='limit', aria-label='limit')
+      md-card-content(ng-show='commitsFound')
+        md-card(ng-repeat='commit in commits | limitTo: limit')
+          md-card-header
+            md-card-avatar(ng-show='loadedGithub')
+              img.md-user-avatar(src='{{commit.commiter.avatar_url}}')
+            md-card-header-text(layout, layout-align='end center')
+              div(layout='column, flex, md-truncate')
+                span.md-title {{commit.commit.message}}
+              md-button.md-raised.md-title.md-primary(ng-click='open= !open') Details
+          md-card-content(ng-show='open')
+            md-list.md-list-item-text(layout='column, flex')
+              span Commited by: {{commit.commit.committer.name}}
+              span Username: {{commit.commiter.login}}
+              span Commited on: {{commit.commit.committer.date | date: 'MM/dd/yyyy HH:mm'}}
+            md-divider(md-inset)
+            a(href='{{commit.html_url}}', target='_blank')
+              md-icon.material-icons.md-primary open_in_new
+              span View on Github
+              

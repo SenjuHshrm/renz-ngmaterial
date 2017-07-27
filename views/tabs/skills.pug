@@ -1,0 +1,14 @@
+md-content.md-padding(layout-xs='column', layout='row')
+  div(flex, layout='column')
+    md-card
+      md-card-title
+        md-card-title-text
+          span.md-title Additional frameworks, libraries and technologies.
+      md-card-content.form-search(ng-controller='skillsCtrl')
+        md-input-container.md-title.md-accent
+          md-tooltip Do I have the skills you need?
+          input#skill-search(type='text', ng-model='search', placeholder='Search skills')
+        div.animate(ng-repeat='skill in skills | filter:search')
+          div.skill-con
+            a.skill-link(href='{{skill.url}}', target='_blank') {{skill.name}}
+          md-divider

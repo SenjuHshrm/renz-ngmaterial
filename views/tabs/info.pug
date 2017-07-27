@@ -1,0 +1,63 @@
+div
+  div(layout='row')
+    div(flex='40')
+      md-card
+        md-card-header
+          md-card-header-text
+            span Details
+        md-card-content
+          md-list
+            md-list-item.md-2-line
+              div.md-list-item-text
+                p Age: {{info.age}}
+                p Location: {{info.location}}
+                p Mobile: {{info.mobile}}
+                p Email: {{info.email}}
+    div(flex='60')
+      md-card
+        md-card-header
+          md-card-header-text
+            span Language Proficiency
+        md-card-content(ng-controller='languageCtrl')
+          div(layout='row')
+            div(flex='10')
+            div(flex='80')
+              div.bars
+                div(ng-repeat='language in languages')
+                  md-tooltip {{language.percent}} proficient in {{language.name}}
+                  p {{language.name}}
+                  div.bar-length
+                    div.bar-blend(style='width:{{language.percent}}')
+                      span.val-lvl {{language.percent}}
+            div(flex='10')
+  md-card
+    md-card-header
+      md-card-header-text
+        span Educational Background
+    md-card-content(ng-controller='educCtrl')
+      div(ng-repeat='educ in educs')
+        md-card-header.repo-list
+          md-card-header-text
+            span.md-title {{educ.school}}
+            span.md-subhead {{educ.loc}}
+            span.md-subhead {{educ.sy}}
+  md-card
+    md-card-header
+      md-card-header-text
+        span Work Experience / Internship
+    md-card-content(ng-controller='expCtrl')
+      div(ng-repeat='exp in exps')
+        md-card-header.repo-list
+          md-card-header-text
+            span.md-title {{exp.company}}
+            span.md-subhead {{exp.location}}
+            span.md-subhead {{exp.title}}
+            span.md-subhead {{exp.duration}}
+        md-content
+          md-list
+            md-list-item.md-2-line
+              div.md-list-item-text
+                div(ng-repeat='task in exp.tasks')
+                  ul
+                    li
+                      p {{task.task}}

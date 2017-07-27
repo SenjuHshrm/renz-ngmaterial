@@ -1,0 +1,9 @@
+div
+  md-card
+    img.md-card-image.border(ng-src='.//img/banner.png')
+    md-card-header.top-header
+      md-card-avatar
+        img.border.md-user-avatar(src='.//img/profile.jpg')
+      md-card-header-text
+        span.md-title {{info.first_name}} {{info.middle_name.charAt(0)}}. {{info.last_name}}
+        span.md-subhead {{info.title}}

@@ -1,0 +1,13 @@
+div
+  md-card
+    md-card-header
+      md-card-header-text
+        span.md-title You can find me at:
+    md-card-content(ng-controller='linkCtrl')
+      div(ng-repeat='link in links')
+        md-card-header.repo-list
+          md-card-avatar.link-setup
+            span.fa.fa-2x(class='{{link.class}}')
+          md-card-header-text
+            span.md-title {{link.social}}
+            a.md-subhead(href='{{link.url}}', target='_blank') {{link.user_name}}
