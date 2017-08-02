@@ -6,7 +6,7 @@ var profile = {
     title: "Junior Web Developer",
     age: "20",
     location: "Calauan, Laguna",
-    mobile: "+639396526072",
+    mobile: "+639396526072 / +639484882417",
     email: "rdimasapit.bos@gmail.com"
   }
 };

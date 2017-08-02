@@ -37,16 +37,6 @@ angular.module("portfolioPage",["ngMaterial","ngResource","ngAnimate","ui.router
       }).catch(function(res){
         console.log("catch", res);
       });
-
-      getGit.getData("https://api.github.com/repos/SenjuHshrm/renz-ngmaterial/commits").then(function(res) {
-        $scope.commits = res.data;
-        $scope.commitsFound = res.data.length > 0;
-        $scope.limit = 5;
-        $scope.maxLimit = res.data.length;
-      }).catch(function(res) {
-        console.log("catch", res);
-      });
-
       getGit.getData("https://api.github.com/repos/SenjuHshrm/renz-ngmaterial/readme", true).then(function(res) {
         $scope.readme = $sce.trustAsHtml(res.data);
         getGit.getData("https://api.github.com/repos/SenjuHshrm/renz-ngmaterial/readme").then(function(res) {
