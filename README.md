@@ -67,7 +67,7 @@ gulp
 * [AngularJS](https://angularjs.org/) - Web framework used.
 * [AngularJS Material](https://material.angularjs.org/) - UI Component framework used.
 * [GitHub API](https://developer.github.com/v3/) - API used to access GitHub data over http.
-* [Font Awesome](https://developer.github.com/v3/) - Icon set used.
+* [Font Awesome](http://fontawesome.io/) - Icon set used.
 
 
 ## Author
