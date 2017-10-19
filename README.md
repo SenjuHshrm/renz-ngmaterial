@@ -1,6 +1,6 @@
 # [Express-Angular-Node]
 
-**renz-EANv2.herokuapp.com**
+**renz-ean.herokuapp.com**
 is my personal portfolio page.
 
 The codes used are based here:
