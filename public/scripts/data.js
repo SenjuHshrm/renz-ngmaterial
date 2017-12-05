@@ -6,7 +6,7 @@ var profile = {
     title: "Junior Web Developer",
     age: "20",
     location: "Calauan, Laguna",
-    mobile: "+639396526072 / +639484882417",
+    mobile: "+639393622566 / +639396526072",
     email: "rdimasapit.bos@gmail.com"
   }
 };
@@ -36,6 +36,11 @@ var links = [{
   class: "fa-linkedin-square",
   user_name: "renzo-dimasapit-80b856144",
   url: "https://www.linkedin.com/in/renzo-dimasapit-80b856144/"
+}, {
+  social: "GitLab",
+  class: "fa-gitlab",
+  user_name: "SenjuHshrm",
+  url: "https://gitlab.com/SenjuHshrm"
 }];
 
 var educs = [{
@@ -65,8 +70,8 @@ var languages = [{
   name: "Java",
   percent: "61%"
 }, {
-  name: "C++",
-  percent: "58%"
+  name: "VB.Net",
+  percent: "80%"
 }];
 
 var skills = [{
@@ -103,9 +108,24 @@ var skills = [{
 }, {
   name: "PHP",
   url: "http://php.net/manual/en/intro-whatis.php"
+}, {
+  name: "VB.Net",
+  url: "https://docs.microsoft.com/en-us/dotnet/visual-basic/"
 }];
 
 var exp = [{
+  company: "Pylon International Trading Corporation",
+  location: "Brgy. Concepcion, San Pablo City, Laguna",
+  title: "Programmer",
+  duration: "October 2017 - Present",
+  tasks: [{
+    task: "Create a system based on client needs"
+  }, {
+    task: "Debug existing systems"
+  }, {
+    task: "Provide logic for backend codes"
+  }]
+}, {
   company: "Big Outsource",
   location: "Lot 1 & 2, Block 4, Guevarra Subd., Brgy. Del Remedio, San Pablo City, Laguna",
   title: "IT Department Intern",
