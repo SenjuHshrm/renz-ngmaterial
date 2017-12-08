@@ -65,13 +65,13 @@ var languages = [{
   percent: "94%",
 }, {
   name: "PHP",
-  percent: "55%",
+  percent: "74%",
 }, {
   name: "Java",
   percent: "61%"
 }, {
   name: "VB.Net",
-  percent: "80%"
+  percent: "78%"
 }];
 
 var skills = [{
@@ -111,6 +111,12 @@ var skills = [{
 }, {
   name: "VB.Net",
   url: "https://docs.microsoft.com/en-us/dotnet/visual-basic/"
+}, {
+  name: "Meteor.js",
+  url: "https://www.meteor.com/"
+}, {
+  name: "Apache",
+  url: "https://www.apache.org/"
 }];
 
 var exp = [{
