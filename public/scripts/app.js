@@ -41,7 +41,6 @@ angular.module("portfolioPage",["ngMaterial","ngResource","ngAnimate","ui.router
         $scope.readme = $sce.trustAsHtml(res.data);
         getGit.getData("https://api.github.com/repos/SenjuHshrm/renz-ngmaterial/readme").then(function(res) {
           $scope.readmeInfo = res.data;
-          console.log(res.data);
         }).catch(function(res) {
           console.log("catch", res);
         });
