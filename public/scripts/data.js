@@ -3,7 +3,7 @@ var profile = {
     first_name: "Renzo",
     middle_name: "Legaspi",
     last_name: "Dimasapit",
-    title: "Junior Web Developer",
+    title: "VB.Net | Web Developer",
     age: "20",
     location: "Calauan, Laguna",
     mobile: "+639393622566 / +639105010086",
