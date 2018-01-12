@@ -5,7 +5,7 @@ div
     md-card-header-text
       span.md-title.github {{gitHubUser.name}}
       span.md-subhead
-        a(href='{{links[2].url}}', target='_blank') (@{{gitHubUser.login}})
+        a(href='{{gitHubUser.html_url}}', target='_blank') (@{{gitHubUser.login}})
   md-card-content
     md-list
       md-list-item.md-2-line
