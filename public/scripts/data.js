@@ -117,6 +117,12 @@ var skills = [{
 }, {
   name: "Apache",
   url: "https://www.apache.org/"
+}, {
+  name: "Android (Android Studio)",
+  url: "https://developer.android.com/studio/index.html"
+}, {
+  name: "Android (Eclipse)",
+  url: "https://www.android.com/eclipse/"
 }];
 
 var exp = [{
