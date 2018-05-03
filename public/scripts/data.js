@@ -4,7 +4,7 @@ var profile = {
     middle_name: "Legaspi",
     last_name: "Dimasapit",
     title: "VB.Net | Web Developer",
-    age: "20",
+    age: "21",
     location: "Calauan, Laguna",
     mobile: "+639393622566 / +639105010086",
     email: "rdimasapit.bos@gmail.com"
