@@ -46,15 +46,27 @@ var links = [{
 var educs = [{
   school: "Laguna State Polytechnic University",
   loc: "San Pablo City",
-  sy: "2016-2017"
+  sy: "2013-2017"
 }, {
   school: "Col. Lauro D. Dizon Memorial National Highschool",
-  loc: "San Pablo City",
+  loc: "San Pablo City, Laguna",
   sy: "2012-2013"
 }, {
+  school: "Keanney-Diaz Educational Institute",
+  loc: "San Jose City, Nueva Ecija",
+  sy: "2011-2012"
+}, {
+  school: "Col. Lauro D. Dizon Memorial National Highschool",
+  loc: "San Pablo City, Laguna",
+  sy: "2009-2011"
+}, {
   school: "Imok Elementary School",
-  loc: "Calauan",
-  sy: "2008-2009",
+  loc: "Calauan, Laguna",
+  sy: "2006-2009"
+}, {
+  school: "Aguinaldo Elementary School",
+  loc: "Murphy Cubao, Quezon City",
+  sy: "2003-2006"
 }];
 
 var languages = [{
