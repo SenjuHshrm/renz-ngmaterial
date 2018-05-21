@@ -41,6 +41,16 @@ var links = [{
   class: "fa-gitlab",
   user_name: "SenjuHshrm",
   url: "https://gitlab.com/SenjuHshrm"
+}, {
+	social: "Instagram",
+  class: "fa-instagram",
+  user_name: "rg.2631",
+  url: "https://www.instagram.com/rg.2631/"
+}, {
+	social: "Twitter",
+  class: "fa-twitter-square",
+  user_name: "@RG_xxvi_xxxi",
+  url: "https://twitter.com/RG_xxvi_xxxi"
 }];
 
 var educs = [{

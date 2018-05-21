@@ -1,12 +1,14 @@
 extends layout
 block content
-  md-content(flex)
-    md-tabs(md-dynamic-height, mg-border-bottom)
-      md-tab(label='INFORMATION')
-        include tabs/info
-      md-tab(label='SKILLS')
-        include tabs/skills
-      md-tab(label='LINKS')
-        include tabs/links
-      md-tab(label='API')
-        include tabs/api
+	md-content(flex)
+		md-tabs(md-dynamic-height, mg-border-bottom)
+			md-tab(label='INFORMATION')
+				include tabs/info
+			md-tab(label='SKILLS')
+				include tabs/skills
+			md-tab(label='LINKS')
+				include tabs/links
+			md-tab(label='ACHIEVEMENTS')
+				include tabs/achievements
+			md-tab(label='API')
+				include tabs/api
