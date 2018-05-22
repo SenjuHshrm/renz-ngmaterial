@@ -1,29 +1,29 @@
 html(ng-app='portfolioPage')
-  head
-    title #{title}
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible', content='IE=Edge')
-    meta(name='author', content='Renzo L. Dimasapit')
-    script(src='/scripts/lib/angular/angular.min.js')
-    script(src='/scripts/lib/angular/angular-resource.min.js')
-    script(src='/scripts/lib/angular/angular-animate.min.js')
-    script(src='/scripts/lib/angular/angular-aria.min.js')
-    script(src='/scripts/lib/angular/angular-messages.min.js')
-    script(src='/scripts/lib/angular/angular-material.min.js')
-    script(src='/scripts/lib/angular/ui-bootstrap.js')
-    script(src='/scripts/lib/angular/angular-ui-router.min.js')
-    script(src='/scripts/app.js')
-    script(src='/scripts/data.js')
-    link(rel='stylesheet', href='/styles/lib/css/angular-material.min.css')
-    link(rel='stylesheet', href='/styles/lib/css/font-awesome.min.css')
-    link(rel='stylesheet', href='/styles/styles.css')
-    block script
-  body(ng-cloak, ng-controller='pageCtrl')
-    div(layout='row')
-      div(flex='10')
-      div(flex='80')
-        include partials/header
-        block content
-        include partials/footer
-      div(flex='10')
+	head
+		title #{title}
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+		meta(name='author', content='Renzo L. Dimasapit')
+		link(rel='stylesheet', href='/styles/lib/css/angular-material.min.css')
+		link(rel='stylesheet', href='/styles/lib/css/font-awesome.min.css')
+		link(rel='stylesheet', href='/styles/styles.css')
+		block script
+	body(ng-cloak, ng-controller='pageCtrl')
+		div(layout='row')
+			div(flex='10')
+			div(flex='80')
+				include partials/header
+				block content
+				include partials/footer
+			div(flex='10')
+	script(src='/scripts/lib/angular/angular.min.js')
+	script(src='/scripts/lib/angular/angular-resource.min.js')
+	script(src='/scripts/lib/angular/angular-animate.min.js')
+	script(src='/scripts/lib/angular/angular-aria.min.js')
+	script(src='/scripts/lib/angular/angular-messages.min.js')
+	script(src='/scripts/lib/angular/angular-material.min.js')
+	script(src='/scripts/lib/angular/ui-bootstrap.js')
+	script(src='/scripts/lib/angular/angular-ui-router.min.js')
+	script(src='/scripts/app.js')
+	script(src='/scripts/data.js')
