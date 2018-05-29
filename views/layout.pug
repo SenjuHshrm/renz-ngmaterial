@@ -10,13 +10,9 @@ html(ng-app='portfolioPage')
 		link(rel='stylesheet', href='/styles/styles.min.css')
 		block script
 	body(ng-cloak, ng-controller='pageCtrl')
-		div(layout='row')
-			div(flex='10')
-			div(flex='80')
 				include partials/header
 				block content
 				include partials/footer
-			div(flex='10')
 	script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js')
 	script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-resource.min.js')
 	script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js')
