@@ -81,19 +81,19 @@ var educs = [{
 
 var languages = [{
   name: "HTML/CSS",
-  percent: "80%",
+  percent: "85%",
 }, {
   name: "Javascript",
-  percent: "94%",
+  percent: "95%",
 }, {
   name: "PHP",
-  percent: "74%",
+  percent: "80%",
 }, {
   name: "Java",
-  percent: "61%"
+  percent: "80%"
 }, {
   name: "VB.Net",
-  percent: "78%"
+  percent: "75%"
 }];
 
 var skills = [{
