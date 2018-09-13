@@ -134,17 +134,14 @@ var skills = [{
   name: "VB.Net",
   url: "https://docs.microsoft.com/en-us/dotnet/visual-basic/"
 }, {
-  name: "Meteor.js",
-  url: "https://www.meteor.com/"
-}, {
   name: "Apache",
   url: "https://www.apache.org/"
 }, {
   name: "Android (Android Studio)",
   url: "https://developer.android.com/studio/index.html"
 }, {
-  name: "Android (Eclipse)",
-  url: "https://www.android.com/eclipse/"
+  name: "Java (NetBeans)",
+  url: "https://netbeans.org/"
 }];
 
 var exp = [{
